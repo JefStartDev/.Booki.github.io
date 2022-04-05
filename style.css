@@ -569,7 +569,7 @@ article span .fas.fa-star.empty {
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
-  width: 25%;
+  width: 30%;
   height: 594px;
   padding: 20px;
   margin-top: 35px;
@@ -817,7 +817,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    margin: 10px;
   }
   nav {
     display: flex;
@@ -879,7 +879,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     background-color: #ffffff;
-    width: 100%;
+    width: 98%;
     height: auto;
     margin: 0px;
     order: 1;
@@ -932,8 +932,10 @@ footer {
     flex: 1;
     width: 100%;
     margin-top: 35px;
-    margin-left: 0px;
-    padding: 2px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 0px;
     background-color: #f2f2f2;
     order: 0;
@@ -955,7 +957,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 98%;
     height: 100%;
     margin: 0px 10px 0px;
   }
