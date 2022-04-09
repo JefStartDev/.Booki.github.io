@@ -465,6 +465,7 @@ button {
 .S1__filtres--info i {
   color: #0065fc;
   margin-left: -7px;
+  padding: 9px 0 10px;
 }
 .S1__filtres--info i.fas::before {
   font-size: larger;
@@ -831,7 +832,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   body {
-    display: bloc;
+    display: block;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -839,7 +840,7 @@ footer {
   .logo {
     width: 125px;
     height: 65px;
-    float: center;
+    justify-content: center;
     margin-top: 20px;
   }
   header {
@@ -1034,9 +1035,9 @@ footer {
 footer ul{
 padding: 0px;
 }
-  .footer--section {
+.footer--section {
     width: 100%;
     margin-top: 15px;
     text-align: center;
-   
-  }
+    
+}
