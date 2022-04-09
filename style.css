@@ -631,7 +631,8 @@ article span .fas.fa-star.empty {
 }
 .pop--title--item i {
   margin-top:0px;
-  font-size:x-large;
+  font-size:large;
+
 }
 .pop__card {
   display: flex;
