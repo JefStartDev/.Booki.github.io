@@ -377,9 +377,6 @@ nav a:hover {
   border-top: solid 3px #0065fc;
   padding-top: 17px;
 }
-input {
-  border-style: none;
-}
 
 /*section S1 = barre de recherche+filtres+hbergements+populaires*/
 #S1 {
@@ -399,6 +396,10 @@ input {
   border-style: none;
   padding-left: 15px;
   left: 25px;
+}
+input::placeholder{
+  font-weight: bold;
+  color: #0a0d12;
 }
 .srch {
   display: flex;
@@ -433,6 +434,12 @@ button {
   align-items: baseline;
 }
 
+i.fas.fa-search{
+  display: none;
+}
+span.rechercher{
+visibility:visible;
+}
 .S1__filtres--info {
   display: flex;
   flex-direction: row;
@@ -450,7 +457,7 @@ button {
   justify-content: space-between;
   margin: 25px 25px 35px;
   background-color: #ffffff;
-  border: solid 1px #f2f2f2;
+  border: solid 2px #f2f2f2;
   border-top-right-radius: 25px;
   border-end-end-radius: 25px;
   border-top-left-radius: 25px;
@@ -494,7 +501,7 @@ button {
   align-items: flex-start;
 }
 #S1 .filter-btn {
-  color: #0065fc;
+  color: #0a0d12;
   justify-content: center;
 }
 article span .fas.fa-star {
@@ -505,8 +512,8 @@ article span .fas.fa-star.empty {
 }
 .bloc__section__hebergement {
   display: block;
-  width: 60%;
-  min-height: 95vh;
+  width: 65%;
+  min-height: 90vh;
   background-color: #f2f2f2;
   margin-top: 35px;
   margin-left: 15px;
@@ -516,6 +523,7 @@ article span .fas.fa-star.empty {
 .bloc__section__hebergement h2{
   margin-bottom: 30px;
 }
+
 .info-hotel{
   padding-bottom: 5px;
 }
@@ -527,7 +535,9 @@ article span .fas.fa-star.empty {
   height: 100%;
 }
 .affplus {
-  margin: 0px 20px 26px;
+  margin: 53px 35px 25px;
+  padding: 0px 0px 5px;
+  position: relative;
 }
 .card__thumb {
   flex-direction: column;
@@ -574,7 +584,7 @@ article span .fas.fa-star.empty {
   justify-content: center;
   flex-wrap: wrap;
   flex: 1;
-  width: 30%;
+  width: 25%;
   max-height: 100vh;
   padding: 20px;
   margin-top: 35px;
@@ -592,9 +602,9 @@ article span .fas.fa-star.empty {
   flex-direction: row;
   flex-wrap: wrap;
   width: calc(100% - 16px);
-  height: 25vh;
+  height: 24vh;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 3px;
   margin: 10px 5px 10px;
 }
@@ -614,8 +624,8 @@ article span .fas.fa-star.empty {
 
 .card__thumb--pop img {
   display: flex;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   width: 40%;
   height: 100%;
   margin: 0px;
@@ -744,6 +754,9 @@ footer {
   width: 35%;
   text-align: left;
 }
+.footer--section h3{
+  margin-left: 40px;
+}
 .footer--section li {
   list-style: none;
 }
@@ -770,6 +783,15 @@ footer {
   }
   .bloc__section__hebergement {
     width: 100%;
+    min-height: 30%;
+  }
+  .affplus {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 50px 20px 25px;
+    position: relative;
+    
   }
   .hebergement__card {
     width: 95%;
@@ -779,7 +801,12 @@ footer {
     width: 100%;
   }
   .affplus {
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-end;
+    margin: 50px 20px 25px;
+    position: relative;
+    
   }
   .card__thumb {
     flex-direction: column;
@@ -813,6 +840,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     width: 98%;
+    min-height: 20%;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 3px;
@@ -900,13 +928,26 @@ footer {
   .S1__filtres--info {
     width: 100%;
   }
+
+  i.fas.fa-search{
+    display: block;
+    visibility: visible;
+    color: #ffffff;
+    background-color: #0065fc;
+    font-size: larger;
+    padding: 0px;
+  }
+  span.rechercher{
+  display: none;
+  }
+
   .bloc__main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
-
+  
   .bloc__section__hebergement {
     display: flex;
     flex-direction: column;
@@ -928,9 +969,8 @@ footer {
     margin-left:0px;
     padding-left: 0px;
   }
-  .affplus {
-    display: none;
-  }
+  
+   
   .info-hotel {
     padding-bottom: 20px;
   }
@@ -1024,8 +1064,6 @@ footer {
     flex: 1;
   }
   
-  
-  
   footer {
     display: flex;
     flex-direction: column;
@@ -1033,12 +1071,16 @@ footer {
     width: 100%;
     background-color: #f2f2f2;
   }
-footer ul{
-padding: 0px;
+
+  footer ul{
+  padding: 0px;
 }
-.footer--section {
+
+  .footer--section {
     width: 100%;
     margin-top: 15px;
     text-align: center;
-    
-}
+  }
+  .footer--section h3{
+  margin-left:-20px;
+  }
