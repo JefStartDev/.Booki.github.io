@@ -380,7 +380,7 @@ nav a:hover {
 
 /*section S1 = barre de recherche+filtres+hbergements+populaires*/
 #S1 {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 form {
@@ -492,7 +492,7 @@ span.rechercher {
 
 .bloc__main {
   display: flex;
-  width: 100%;
+  min-width: 100%;
   margin: 0px;
   flex-wrap: wrap;
   background-color: #ffffff;
@@ -511,7 +511,8 @@ article span .fas.fa-star.empty {
 }
 .bloc__section__hebergement {
   display: block;
-  width: 65%;
+
+  max-width: 65%;
   min-height: 90vh;
   background-color: #f2f2f2;
   margin-top: 35px;
@@ -542,7 +543,7 @@ article span .fas.fa-star.empty {
   flex-direction: column;
   position: relative;
   line-height: 8px;
-  width: calc(100% - 16px);
+  width: calc(100% - 20px);
   background-color: #ffffff;
   border-radius: 20px;
   padding: 2px;
@@ -650,7 +651,7 @@ article span .fas.fa-star.empty {
 /*section activités à marseille*/
 #activite {
   display: block;
-  width: 100vh;
+  width: 100vw;
   min-width: 100%;
 }
 #activite h2 {
@@ -738,7 +739,7 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
   background-color: #f2f2f2;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer--section {
@@ -771,13 +772,13 @@ footer {
     width: 100%;
   }
   .bloc__main {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
   .bloc__section__hebergement {
-    width: 100%;
+    min-width: 100%;
     min-height: 30%;
   }
   .affplus {
@@ -813,7 +814,7 @@ footer {
 
   .bloc--section--populaire {
     display: block;
-
+    width: 100%;
     margin-top: 35px;
     margin-right: 10px;
     margin-left: 10px;
@@ -860,6 +861,7 @@ footer {
   .logo {
     width: 125px;
     height: 65px;
+
     justify-content: center;
     margin-top: 20px;
   }
@@ -876,7 +878,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 50%;
+    margin-left: 20px;
     margin-bottom: 0px;
     padding-bottom: 10px;
   }
@@ -916,10 +918,34 @@ footer {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .S1__filtres--info {
-    width: 100%;
+
+  form {
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
   }
 
+  label {
+    margin: 25px 30px 0px;
+  }
+  .S1__filtres {
+    display: flex;
+    min-width: 365px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .S1__filtres--info {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    justify-content: space-between;
+    margin: 25px 15px 35px;
+  }
   i.fas.fa-search {
     display: block;
     visibility: visible;
@@ -945,7 +971,8 @@ footer {
     justify-content: flex-start;
     align-items: center;
     background-color: #ffffff;
-    width: 98%;
+    width: 100%;
+    min-width: 375px;
     height: auto;
     margin: 0px;
     order: 1;
@@ -997,12 +1024,13 @@ footer {
     align-items: center;
     flex: 1;
     width: calc(100% - 10px);
+    min-width: 375px;
     margin-top: 35px;
-    margin-left: 5px;
-    margin-right: 10px;
-    padding-left: 0px;
-    padding-right: 10px;
-    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 0px;
     background-color: #f2f2f2;
     order: 0;
   }
@@ -1012,7 +1040,7 @@ footer {
     justify-content: space-evenly;
     width: 100%;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 3px;
     margin: 8px 5px 8px;
   }
@@ -1025,13 +1053,13 @@ footer {
   .bloc__activité {
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100vw - 10px);
+    width: calc(100vw - 5px);
     height: 100%;
     margin: 0px 0px 0px;
   }
   .act--card {
     width: 100vw;
-    min-width: 100vw;
+    min-width: 375px;
     max-height: 25%;
     justify-content: center;
     margin-left: 0px;
@@ -1059,6 +1087,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    min-width: 375px;
     background-color: #f2f2f2;
   }
 
