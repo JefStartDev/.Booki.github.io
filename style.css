@@ -439,6 +439,10 @@ i.fas.fa-search {
 span.rechercher {
   visibility: visible;
 }
+.S1__filtres {
+  display: flex;
+  align-items: baseline;
+}
 .S1__filtres--info {
   display: flex;
   flex-direction: row;
